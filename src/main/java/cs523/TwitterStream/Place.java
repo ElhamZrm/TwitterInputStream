@@ -13,6 +13,7 @@ public class Place {
 	@SerializedName("|full_name")
     private String fullName;
 	
+	private String city;
     private String country;
     
 	@Override
@@ -21,6 +22,7 @@ public class Place {
 		obj.addProperty("name", name);
 		obj.addProperty("full_name", fullName);	
 		obj.addProperty("place_type", placeType);	
+		obj.addProperty("city" , city);
 		obj.addProperty("country", country);
 		
 		return obj.toString();
